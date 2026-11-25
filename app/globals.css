@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:#f7f6f2;--panel:#ffffff;--ink:#16202a;--mute:#5d6975;--line:#dedbd2;--accent:#0b6e6e}
+@media (prefers-color-scheme: dark){:root{--bg:#0e1418;--panel:#151d23;--ink:#e8edf0;--mute:#93a1ab;--line:#26323a;--accent:#4fc3b8}}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink)}
+.reveal{animation:rise .6s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none}}
